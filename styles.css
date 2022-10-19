@@ -47,3 +47,27 @@
   background-color: lightgray;
   border: none;
 }
+
+.card-buttons {
+  display: flex;
+  gap: 20px;
+}
+.github {
+  width: 100px;
+  height: 45px;
+  border: 1px solid red;
+  background-image: url("./img/github-black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
