@@ -16,29 +16,33 @@
 }
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-image: url("./img/hero-background.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .hero-side {
   width: 100%;
-  height: 100%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  position: relative;
-  top: 30%;
-  left: 10%;
+  padding-top: 20%;
+  padding-left: 15%;
   /* animation: slide 1.25s; */
+  font-size: 1.5em;
 }
 @keyframes slide {
   from {
-    -webkit-transform: translateX(-1000px);
+    -webkit-transform: translateX(-40%);
   }
   to {
     -webkit-transform: translateX(0);
   }
+}
+.hero-side-buttons {
+  display: flex;
+  gap: 40px;
 }
 .hero-side-buttons > button {
   width: 150px;
@@ -46,8 +50,94 @@
   border-radius: 25px;
   background-color: lightgray;
   border: none;
+  font-size: 1.0em;
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 100px; */
+  text-align: center;
+}
+.skill {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-img {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 25px;
+}
+.skill > p {
+  font-size: 1.25em;
+}
+.java {
+  background-image: url("./img/java.png");
+}
+.python {
+  background-image: url("./img/python.png");
+}
+.cplusplus {
+  background-image: url("./img/c++.png");
+}
+.react {
+  background-image: url("./img/react.png");
+}
+.node {
+  background-image: url("./img/nodejs.png");
+}
+.javascript {
+  background-image: url("./img/javascript.png");
+}
+.html {
+  background-image: url("./img/html.png");
+}
+.css {
+  background-image: url("./img/css.png");
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.card-img-container {
+  width: 600px;
+  height: 300px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-right {
+  width: 500px;
+  font-size: 1.25em;
+}
+.img-ubereats {
+  background-image: url("./img/ubereats.png");
+}
+.img-maze {
+  background-image: url("./img/maze.png");
+}
+.img-wordle {
+  background-image: url("./img/wordle.jpeg");
+}
 .card-buttons {
   display: flex;
   gap: 20px;
@@ -63,6 +153,10 @@
   justify-content: center;
   align-items: center;
 }
+.github > a {
+  width: 100%;
+  height: 100%;
+}
 .link {
   width: 100px;
   height: 45px;
@@ -70,4 +164,8 @@
   justify-content: center;
   align-items: center;
   border: 1px solid red;
+  font-size: 1.5em;
+}
+.link > a {
+  text-decoration: none;
 }
